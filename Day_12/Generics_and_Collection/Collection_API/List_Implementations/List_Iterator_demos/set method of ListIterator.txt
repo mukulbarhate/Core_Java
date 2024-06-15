@@ -1,0 +1,5 @@
+The set() method in the ListIterator interface is used to replace the last element returned by a call to next() or previous() with a specified element. Here's how it works:
+
+Positioning: The ListIterator must be positioned at an element (either by calling next() or previous()). If neither next() nor previous() has been called yet,an IllegalStateException will be thrown.
+
+Replacement: Once the iterator is properly positioned, the set() method replaces the last element returned by next() or previous() with the specified element passed as an argument to set().

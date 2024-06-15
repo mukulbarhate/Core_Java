@@ -1,0 +1,14 @@
+		1  0 0 0 1 0 0 1 0 
+		MSD		 LSD
+
+
+MSD  - Most Significant Digit
+	if it is 1 then the number is negative
+	if it is 0 then the number is positive
+
+LSD - Least Significant Digit
+	if it is 0 then the number is even
+	if it is 1 then the number is odd
+
+
+

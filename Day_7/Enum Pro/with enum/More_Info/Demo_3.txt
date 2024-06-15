@@ -1,0 +1,63 @@
+// package core1;
+
+class MyClass
+{
+	
+	public MyClass()
+	{
+		System.out.println("inside MyClass constructor");
+	}
+	static
+	{
+		System.out.println("inside MyClass static initializer");
+	}
+	public static final MyClass ref=new MyClass();
+}
+
+enum MyEnum
+{
+	
+	instance;
+	static
+	{
+		System.out.println("inside MyEnum static block");
+	}
+	
+	MyEnum()
+	{
+		System.out.println("in the MyEnum constructor");
+	}
+	
+	public void disp1()
+	{
+		System.out.println("inside disp1");
+	}
+	public void disp2()
+	{
+		System.out.println("inside disp2");
+	}
+}
+public class Demo_3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main function started");
+		/*
+		 * MyEnum ref1=MyEnum.instance; ref1.disp1(); ref1.disp2();
+		 */
+		try {
+			Class cls=Class.forName("core1.MyEnum");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			Class cls1=Class.forName("core1.MyClass");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

@@ -1,0 +1,39 @@
+package core1;
+import java.util.*;
+
+/* The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used.   
+*/
+
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+		PriorityQueue<Integer> p1=new PriorityQueue<>();
+		p1.add(300);
+		p1.add(140);
+		p1.add(200);
+		System.out.println(p1); // by default smallest element gets first preference
+    
+		PriorityQueue<String> p2=new PriorityQueue<>();
+		p2.add("hello");
+		p2.add("allthebest");
+		p2.add("welcome");
+		System.out.println(p2); // by default smallest element gets first preference
+	
+		PriorityQueue<Integer> p3=new PriorityQueue<>(Comparator.reverseOrder());
+		p3.add(300);
+		p3.add(140);
+		p3.add(200);
+		System.out.println(p3); 
+		p3.add(10);
+		System.out.println("After adding 10\t"+p3);
+		
+		PriorityQueue<String> p4=new PriorityQueue<>(Comparator.reverseOrder());
+		p4.add("hello");
+		p4.add("allthebest");
+		p4.add("welcome");
+		System.out.println(p4); 
+		p4.add("abcd");
+		System.out.println("After adding abcd\t"+p4);
+	}
+}

@@ -1,0 +1,14 @@
+Class
+Object [ how reference and objects are stored in the memory]
+S.o.p
+what is this
+call by value
+singleton class
+static block
+Lazy and eager resolution
+constructor invocation in case of inheritance
+compiler's role in late binding
+upcasting, downcasting
+
+These are the topics for Thursday's presentation.
+You will be asked to write code also.

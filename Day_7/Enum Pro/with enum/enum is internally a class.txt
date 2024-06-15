@@ -1,0 +1,13 @@
+enum MyFont
+{
+	PLAIN,BOLD,ITALIC
+}
+
+is internally
+
+class MyFont
+{
+	public static final MyFont PLAIN=new MyFont();
+	public static final MyFont BOLD=new MyFont();
+	public static final MyFont ITALIC=new MyFont();
+}
